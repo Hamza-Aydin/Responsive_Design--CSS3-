@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries-Responsive Design-</title>
+    
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        p{
+            display: none;/*bu içeriği saklamamıza yarıyor*/
+        }
+        body{
+            background-color: cadetblue;
+        }
+        /*bu tabletler için olan ölçü (genellikle)*/
+        /*@media(max-width:768px){
+            body{
+                background-color: cornflowerblue;
+            }
+        }*/
+        /*bu da telefonlar için olan ölçü(genellikle)*/
+       /* @media(max-width:500px){
+            body{
+                background-color: chartreuse;
+            }
+        }*/
+       /* @media(min-width:768px){/*sadece büyük ekranda içeriğimizin görünmesini sağlar*/
+            /*p{
+                display: block;
+            }
+        }*/
+        .container{
+            display: flex;
+            width: 600px;
+            margin: 0 auto;
+            flex-wrap: wrap;
+            background-color: blueviolet;
+        }
+        .box{
+            background-color: azure;
+            border: 2px red solid;
+            border-radius: 4px;
+            padding: 10px;
+            width:25%; /*dunu piksel olarak vermemiz işimizi zorlaştırır*/
+        }
+        @media(max-width:768px) {
+            .box{
+                width: 50%;
+            }
+        }
+        @media(max-width:500px){
+            .box{
+                width: 100%;
+            }
+        }/*böylece telefon ve tabletlerde nasıl sığdırılacağını ayarlamış oluruz*/
+    </style>
+
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, consequuntur esse blanditiis doloribus voluptate commodi!</p>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="box">
+            <h1>article 1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sed.</p>
+        </div>
+        <div class="box">
+            <h1>article 2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sed.</p>
+        </div>
+        <div class="box">
+            <h1>article 3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sed.</p>
+        </div>
+        <div class="box">
+            <h1>article 4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, sed.</p>
+        </div>
+    </div>
+</body>
+</html>

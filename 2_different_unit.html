@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Different Unit-Responsive Design-</title>
+    <style>
+        /*html{
+            font-size: 20px;/*sadece buna değer vererek diğer oranları da değiştirabiliriz
+        }*/
+        /*div{
+            font-size: 1.5em;/*parent'ı body'di böylece 24px oldu
+        }*/
+        /*p{
+            font-size: 1.5em;/*böylece 36px oldu parentı div'di çünkü
+            padding: 1.5em; bu div'e göre değil kendi elementimize göre oranlanır yani 54px oldu
+        }*/
+        /*h1{
+            font-size: 3rem;/*html'nin kendi font-size'ina göre oran verememizi sağlar
+        }/*
+        span{
+            font-size: 50%;/*html sayfamızı baz alıyor direkt
+        }*/
+        /*.a{
+            width: 40vw;/*tarayıcı da görünen kısmın % kaçını kaplasın onu giriyoruz
+            height: 20vh;
+            background-color: #ddd;
+        }*/
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .background{
+            background-image: url(./pexels-kevser-7760401.jpg);
+            background-position: center center;
+            background-repeat: no-repeat;      
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            color:#ddd;
+            flex-direction: column;
+            align-items: center;
+            padding: 10rem;
+        }
+        h1{
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        p{
+            font-size: 2rem;
+            letter-spacing: 2px;
+        }
+        @media(max-width:500px){
+            h1{
+                font-size: 2rem;
+                margin-bottom: 0.5rem;
+            }
+            p{
+                font-size: 1rem;
+                letter-spacing: 1px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!--<div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum, sed!</p>
+    </div>
+    <h1>başlık 1</h1>
+    <span>test text</span>
+    <div class="a">i can do it</div>-->
+    <div class="background">
+        <h1>WELCOME TO THE WEBSITE</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, nostrum!</p>
+    </div>
+</body>
+</html>
